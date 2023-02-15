@@ -9,7 +9,7 @@
     https://www.w3schools.com/js/js_htmldom_nodes.asp accessed 15 February 2023
 */
 
-// Get the email form from the document
+// Get the email form, and div on which to append error message
 let inputEmailForm = document.getElementById('sign-up-form');
 let errorMessage = document.getElementById('message-div');
 
