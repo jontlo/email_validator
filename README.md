@@ -4,7 +4,7 @@ This microservice takes an email address and validates it as successful or not w
 
 ## Description
 
-This application uses Node and Express to validate an email address during account an sign-up process. The request is sent to the application as a stringified JSON object and responds with a JavaScript object containing two properties: (1) validity as a boolean and (2) error message (or a blank string if the email is valid). The request is POST and sent to /sign-up. 
+This application uses Node and Express to validate an email address designated for an account sign-up process. The request is sent to the application as a stringified JSON object and responds with a JavaScript object containing two properties: (1) validity as a boolean and (2) error message (or a blank string if the email is valid). The request is POST and sent to ```/sign-up.``` 
 
 ### Request: a JSON Object in the following format:
 ```
@@ -68,4 +68,4 @@ This project was created for Oregon State University's CS_361_400_W2023 course.
 * [README template](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc)
 * [NodeJS Starter Application](https://github.com/osu-cs340-ecampus/nodejs-starter-app)
 * [DOM Manipulation](https://www.w3schools.com/js/js_htmldom_nodes.asp)
-* [Email Validator Regex](https://stackoverflow.com/questions/52456065/how-to-format-and-validate-email-node-js)
+* [Email Validator RegEx](https://stackoverflow.com/questions/52456065/how-to-format-and-validate-email-node-js)
