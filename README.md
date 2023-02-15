@@ -24,6 +24,10 @@ return_validity = {
 * ```valid``` is false by default. If all validator checks are passed, it is true.
 * ```message``` is an empty string by default. If validator checks fail and the email is invalid, it is the error message.
 
+### UML sequence diagram
+
+![UML Sequence Diagram](Validator_UML.png)
+
 ## Getting Started
 
 ### Dependencies
@@ -48,10 +52,11 @@ npm install
 Feel free to contact me for any questions or concerns.
 
 ### Variables to change for integration
-* In ```app.js```, ensure the local PORT matches that in ```create_email.js``` on line 40 (```xhttp.open```).
-* In ```create_email.js```, ensure the email input form ID on line 13 (```document.getElementById```) matches that in the HTML file.
-* In ```create_email.js```, ensure the error message div ID on line 14 (```document.getElementById```) matches that in the HTML file.
+* In ```app.js```, ensure the local host PORT matches that in ```create_email.js``` on line 40 (```xhttp.open```).
+* In ```create_email.js```, ensure the email input form ID on line 13 (```document.getElementById```) matches that in your web page file.
+* In ```create_email.js```, ensure the error message div ID on line 14 (```document.getElementById```) matches that in your web page file.
 
+### Example call
 
 ## Authors
 
