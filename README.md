@@ -45,14 +45,15 @@ npm install
 
 ## Help
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+Feel free to contact me for any questions or concerns.
+
+### Variables to change for integration
+* In ```app.js```, ensure the local PORT matches that in ```create_email.js``` on line 40 (```xhttp.open```).
+* In ```create_email.js```, ensure the email input form ID on line 13 (```document.getElementById```) matches that in the HTML file.
+* In ```create_email.js```, ensure the error message div ID on line 14 (```document.getElementById```) matches that in the HTML file.
+
 
 ## Authors
-
-Contributors names and contact info
 
 * [Jonathan Louangrath](https://github.com/jontlo)
 
