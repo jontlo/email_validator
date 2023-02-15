@@ -14,7 +14,7 @@ data = {
 ```
 * ```email``` takes the user-inputted email address.
 
-### Response a JavaScript object in the following format: 
+### Response: a JavaScript object in the following format: 
 ```
 return_validity = {
         valid: BOOLEAN,
