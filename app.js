@@ -18,7 +18,10 @@ app.use(express.static('public'));
 const cors = require('cors');
 app.use(cors());
 
-app.listen(8100, () => {
+// Designate port to run application
+PORT = 8100
+
+app.listen(PORT, () => {
     console.log("Server started on localhost:8100")
 })
 
@@ -34,10 +37,10 @@ app.post('/sign-up', async function(req, res, next){
         return res.status(400).send(valid)
 });
 
-// Regex for acceptable characters
+// RegEx for acceptable characters
 var emailRegex = /^[-!#$%&'*+\/0-9=?A-Z^_a-z{|}~](\.?[-!#$%&'*+\/0-9=?A-Z^_a-z`{|}~])*@[a-zA-Z0-9](-*\.?[a-zA-Z0-9])*\.[a-zA-Z](-?[a-zA-Z0-9])+$/;
 
-// Email validator function for checks not covered by Regex
+// Email validator function for checks not covered by RegEx
 async function isEmailValid(email) {
 
     // Create return object
@@ -60,7 +63,7 @@ async function isEmailValid(email) {
         return return_validity;
     };
 
-    // Use email Regex to check if characters are valid
+    // Use email RegEx to check if characters are valid
     var valid = emailRegex.test(email);
     if(!valid){
         return_validity.valid = false;
