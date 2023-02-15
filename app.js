@@ -88,14 +88,16 @@ async function isEmailValid(email) {
     };
 
     // Check email service provider
-    if (domainParts[0] != ("gmail" || "yahoo" || "ymail" || "hotmail" || "outlook" || "aol" || "icloud")){
+    var providers = ['gmail', 'yahoo', 'ymail', 'hotmail', 'outlook', 'aol', 'icloud']
+    if (!providers.includes(domainParts[0])){
         return_validity.valid = false;
         return_validity.message = "Error! Email provider is not valid. Try again."
         return return_validity;
     };
     
     // Check domain extension
-    if (domainParts[1] != ("com" || "net" || "org" || "gov" || "co" || "edu" || "info")){
+    var extensions = ['com', 'net', 'org', 'gov', 'co', 'edu', 'info']
+    if (!extensions.includes(domainParts[1])){
         return_validity.valid = false;
         return_validity.message = "Error! Email domain extension is not valid. Try again."
         return return_validity;

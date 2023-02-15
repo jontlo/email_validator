@@ -38,7 +38,7 @@ return_validity = {
 ### Installing
 
 * Fork the repository and clone it on your machine.
-* In the command line terminal, run: ```npm install```
+* In the command line terminal, run ```npm install```
 * Also in the command line terminal, run ```npm install express```
 * In ```app.js```, designate the local PORT on which to run the validator.
 
