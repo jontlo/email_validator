@@ -54,6 +54,7 @@ Feel free to contact me for any questions or concerns.
 * In ```app.js```, ensure the local host PORT on line 22 matches that in ```create_email.js``` on line 40 (```xhttp.open```).
 * In ```create_email.js```, ensure the email input form ID on line 13 (```document.getElementById```) matches that in your web page file.
 * In ```create_email.js```, ensure the error message div ID on line 14 (```document.getElementById```) matches that in your web page file.
+*  In ```app.js```, customize the ```var providers``` and ```var extensions``` on line 91 and 99 respectively to fit which to accept.
 
 ### Example call
 
