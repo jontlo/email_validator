@@ -6,7 +6,7 @@ This microservice takes an email address and validates it as successful or not w
 
 This application uses Node and Express to validate an email address designated for an account sign-up process. The request is sent to the application as a stringified JSON object and responds with a JavaScript object containing two properties: (1) validity as a boolean and (2) error message (or a blank string if the email is valid). The request is POST and sent to ```/sign-up.``` 
 
-### Request: a JSON Object in the following format:
+### Request: a JSON object in the following format:
 ```
 data = {
         email: STRING,
@@ -14,7 +14,7 @@ data = {
 ```
 * ```email``` takes the user-inputted email address.
 
-### Response: 
+### Response a JavaScript object in the following format: 
 ```
 return_validity = {
         valid: BOOLEAN,
