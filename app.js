@@ -34,7 +34,9 @@ app.post('/sign-up', async function(req, res, next){
     
         // Check validity and send back return_validity object
         if (valid.valid) return res.send(valid);
-        return res.status(400).send(valid)
+        
+        // If invalid email address, still send success status alongside response object
+        return res.status(200).send(valid);
 });
 
 // RegEx for acceptable characters
